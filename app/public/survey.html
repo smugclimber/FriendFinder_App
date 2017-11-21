@@ -3,39 +3,153 @@
   <head>
     <meta charset="UTF-8">
     <title>Friend Survey</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>Please Answer the following Questions:</h1>
-    <br>
-    <form action="/action_page.php">
-      1) What is your favorite Pizza Topping:<br>
-      <input type="text" name="pizzaTopping" value="Cheese?"><br><br>
-      <input type="submit" value="Submit">
-    </form>
-    <form action="/action_page.php">
-      1) Do you like watching professional sports:<br>
-      <input type="text" name="sportsPref" value="Yes/No?"><br><br>
-      <input type="submit" value="Submit">
-    </form>
-    <form action="/action_page.php">
-      1) Do you like animals? Dot, Cats, etc.:<br>
-      <input type="text" name="petsPref" value="Yes/No?"><br><br>
-      <input type="submit" value="Submit">
-    </form>
-    <form action="/action_page.php">
-      1) What is your preferred motor oil?:<br>
-      <input type="text" name="oilPref" value="10w30?"><br><br>
-      <input type="submit" value="Submit">
-    </form>
-    <form action="/action_page.php">
-      1) Can dogs and cats coexist?:<br>
-      <input type="text" name="philosophy" value="Philosophy?"><br><br>
-      <input type="submit" value="Submit">
-    </form>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Please Answer the following Questions:</h1>
+        <h3>The greatest dating app in the galaxy!</h3>
+        <div class="text-center">
+          <a href="/all"><button type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-user"></span> View Friends</button></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><strong>Add Friends</strong></h3>
+            </div>
+            <div class="panel-body">
+              <form method="POST" role="form">
+                <div class="form-group" class="d-block my-3">
+                  <label for="name">Your Name:</label>
+                  <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                  <label for="q1">1) What is your favorite Pizza Topping:</label>
+                  <select id="q1" class="custom-select d-block my-3" required>
+                    <option value="">Open this select menu</option>
+                    <option value="1">Olives</option>
+                    <option value="2">Mushrooms</option>
+                    <option value="3">Bacon</option>
+                    <option value="4">Pepperoni</option>
+                    <option value="5">Cheese</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="q2">2) Do you like watching professional sports?:</label>
+                  <select id="q2" class="custom-select d-block my-3" required>
+                    <option value="">Open this select menu</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="q3">3) Do you like animals? Dogs, Cats, etc.:</label>
+                  <select id="q3" class="custom-select d-block my-3" required>
+                    <option value="">Open this select menu</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="q4">4) What is your preferred motor oil?:</label>
+                  <select id="q4" class="custom-select d-block my-3" required>
+                    <option value="">Open this select menu</option>
+                    <option value="1">10w30</option>
+                    <option value="2">15w40</option>
+                    <option value="3">Synthetic</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="q5">5) Philosophically, Can dogs and cats coexist?:</label>
+                  <select id="q5" class="custom-select d-block my-3" required>
+                    <option value="">Open this select menu</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="q6">6) Are coders rad?:</label>
+                  <select id="q6" class="custom-select d-block my-3" required>
+                    <option value="">Open this select menu</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="q7">7) Is the world flat?:</label>
+                  <select id="q7" class="custom-select d-block my-3" required>
+                    <option value="">Open this select menu</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="q8">8) Beatles or Rolling Stones?:</label>
+                  <select id="q8" class="custom-select d-block my-3" required>
+                    <option value="">Open this select menu</option>
+                    <option value="1">Beatles</option>
+                    <option value="2">Rolling Stones</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="q9">9) How much wood could a woodchuck chuck, if a woodchuck could chuck wood?:</label>
+                  <select id="q9" class="custom-select d-block my-3" required>
+                    <option value="">Open this select menu</option>
+                    <option value="1">Depends on his lower incisor tooth, technically...</option>
+                    <option value="2">An acre at least</option>
+                    <option value="3">One log</option>
+                    <option value="4">Is this Survey over yet?</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="q10">10) Will this Friends app work?:</label>
+                  <select id="q10" class="custom-select d-block my-3" required>
+                    <option value="">Open this select menu</option>
+                    <option value="1">Hells yeah!</option>
+                    <option value="2">That dawg don't hunt!</option>
+                  </select>
+                </div>
+              </form>
+              <br>
+              <div class="text-left">
+                <button type="submit" class="btn btn btn-md" id="add-btn"><span class="glyphicon glyphicon-heart"></span> Join the Friends</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $("#add-btn").on("click", function(event)
+      {
+        event.preventDefault();
+        var newFriend = {name: $("#name").val(), scores : []};
+        var badScore = "";
+        console.log("Created the new friend object!");
+        for(var i = 1; i<11; i++)
+        {
+          parseInt($("#q"+i).val().trim())
+          var eachScore = parseInt($("#q"+i).val().trim());
+          newFriend.scores.push(eachScore);
+          console.log("score added: "+ eachScore);
+        }
+        if(newFriend.name === ""){
+          alert("Fill in all Information")
+        }else{
+          $.post("/api/new", newFriend).done(function(data)
+          {
+            console.log(data);
+            alert("Your Match is: " + data.matchName)
+          });
+        }
+      });
+    </script>
   </body>
 </html>
