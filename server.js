@@ -7,7 +7,7 @@ var friends = require("./app/data/friends.js");
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 var matchName = "Nobody yet!";
 
